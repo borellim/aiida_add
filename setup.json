@@ -1,0 +1,27 @@
+{
+    "author": "The AiiDA team",
+    "author_email": "developers@aiida.net",
+    "classifiers": [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 2.7",
+        "Development Status :: 4 - Beta"
+    ],
+    "description": "The official AiiDA plugin for sum_calculation.py",
+    "entry_points": {
+        "aiida.calculations": [
+            "add = aiida_add.calculations.add:SumCalculation"
+        ],
+        "aiida.parsers": [
+            "add = aiida_add.parsers.add:SumParser"
+        ],
+        "console_scripts": [
+        ]
+    },
+    "install_requires": [
+        "aiida_core>=1.0.0b2"
+    ],
+    "license": "MIT License",
+    "name": "aiida_add",
+    "url": "https://github.com/mborelli/aiida-add",
+    "version": "0.1"
+}
